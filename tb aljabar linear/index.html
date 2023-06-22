@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrix Operations</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <!-- Kode lainnya -->
+      <!-- Konten baru -->
+      <div class="content">
+        <h2>TUGAS BESAR ALJABAR LINEAR</h2>
+        <p>
+          ANDHIKA ADRIAN PUTRA (41122119) Prodi Teknik Informatika, Universitas
+          Dian Nusantara Kampus Cibubur
+        </p>
+        <p>
+          Aljabar Linear adalah cabang matematika yang mempelajari struktur dan
+          sifat dari ruang vektor dan transformasi linear. Aljabar Linear
+          membahas konsep seperti vektor, matriks, ruang vektor, subspace,
+          transformasi linear, dan persamaan linear.
+        </p>
+      </div>
+      <!-- Kode lainnya -->
+    </div>
+    <div class="container mt-5">
+      <h1>Matrix Operations</h1>
+      <div class="row">
+        <div class="col">
+          <h3>Matrix A</h3>
+          <table id="matrixA" class="table table-bordered">
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="a11"
+                    placeholder="A11"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="a12"
+                    placeholder="A12"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="a13"
+                    placeholder="A13"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="a21"
+                    placeholder="A21"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="a22"
+                    placeholder="A22"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="a23"
+                    placeholder="A23"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="a31"
+                    placeholder="A31"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="a32"
+                    placeholder="A32"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="a33"
+                    placeholder="A33"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <h3>Matrix B</h3>
+          <table id="matrixB" class="table table-bordered">
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="b11"
+                    placeholder="B11"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="b12"
+                    placeholder="B12"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="b13"
+                    placeholder="B13"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="b21"
+                    placeholder="B21"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="b22"
+                    placeholder="B22"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="b23"
+                    placeholder="B23"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="b31"
+                    placeholder="B31"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="b32"
+                    placeholder="B32"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="b33"
+                    placeholder="B33"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <button id="addBtn" class="btn btn-primary">Addition</button>
+          <button id="subBtn" class="btn btn-primary">Subtraction</button>
+          <button id="mulBtn" class="btn btn-primary">Multiplication</button>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <h3>Result</h3>
+          <table id="result" class="table table-bordered">
+            <tbody>
+              <tr>
+                <td id="r11"></td>
+                <td id="r12"></td>
+                <td id="r13"></td>
+              </tr>
+              <tr>
+                <td id="r21"></td>
+                <td id="r22"></td>
+                <td id="r23"></td>
+              </tr>
+              <tr>
+                <td id="r31"></td>
+                <td id="r32"></td>
+                <td id="r33"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
